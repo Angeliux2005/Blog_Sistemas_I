@@ -151,7 +151,7 @@ header img {
 
 .content-section:hover {
     box-shadow: 0 4px 15px rgba(19, 61, 135, 0.7);
-    transform: scale(1.04);
+    transform: scale(1.02);
 }
 
 .section-title {
@@ -221,4 +221,34 @@ footer {
 
 .invert-filter {
     filter: brightness(0) invert(1);
+}
+
+.prototipe-images {
+  display: flex; /* Habilita Flexbox */
+  flex-direction: column;
+  flex-wrap: wrap; /* Permite que las imágenes salten de línea si es necesario */
+  gap: 20px; /* Espacio entre las imágenes */
+  justify-content: center; 
+  align-items: center;/* Centra y distribuye el espacio */
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #e0e0e0; /* Un borde sutil para el contenedor */
+  border-radius: 8px;
+}
+
+/* Estilos para cada imagen de prototipo */
+.prototipe-img {
+  /* Calcula el ancho para que quepan 2 imágenes por fila, restando el espacio (gap) */
+  /* El 100% incluye el total del contenedor. (100% - 20px de gap) / 2 = 50% - 10px */
+  width: 50%; /* Mantiene la proporción de la imagen */
+  object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+  border-radius: 6px; /* Bordes redondeados para un toque moderno */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para un efecto de profundidad */
+  transition: transform 0.3s ease-in-out; /* Transición para un efecto al pasar el mouse */
+}
+
+/* Efecto de hover (al pasar el ratón) */
+.prototipe-img:hover {
+  transform: scale(1.01); /* Agranda ligeramente la imagen */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--Definicion de valores y links externos de donde obtenemos recursos visuales-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Levantamiento de informacion - EmprendiUNET</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<!-- Cuerpo de la pagina para el HTML del glosario-->
+
+<body>
+
+  <!-- Encabezado de pagina -->
+  <header>
+    <img src="logo_unet.png" alt="UNET Logo" class="logo">
+    <div class="header-text">
+      <h1>EmprendiUNET</h1>
+      <p> Conectando la población emprendedora con la UNET </p>
+    </div>
+  </header>
+
+  <!-- Barras que abren el menu de navegacion -->
+  <div class="dropdown-nav">
+    <button class="dropbtn">&#9776; Menú</button>
+    <div class="dropdown-content">
+      <a href="index.html">Inicio</a>
+      <a href="tecnicas.html">Tecnicas de levantamiento</a>
+      <a href="development.html">Proceso de desarrollo</a>
+      <a href="glosario.html">Glosario de terminos</a>
+    </div>
+  </div>
+
+  <!-- Seccion principal de la pagina -->
+  <main class="container">
+  
+    <div class="info-point">
+      <h3>Tecnicas de levantamiento de informacion en el desarrollo de emprendiUNET</h3>
+    </div>
+
+    <br>
+    <!-- De aqui para abajo estaran las imagenes del protipo -->
+    <section class="content-section">
+
+      <div class="info-point">
+        <h3>Prototipado del sistema "Registro y Gestión del Emprendimiento"</h3>
+        <p>Se creo un prototipo del sistema para evaluar con retroalimentaciones su efectividad</p>
+      </div>
+
+      <div class="prototipe-images">
+        <h1>Creacion del emprendimiento</h1>
+        <img src="resources/creacion-startUp.jpg" alt="Pantalla 1 del prototipo" class="prototipe-img">
+      </div>
+
+      <div class="prototipe-images">
+        <h1>Gestion del emprendimiento</h1>
+        <img src="resources/gestion-startUp.jpg" alt="Pantalla 3 del prototipo" class="prototipe-img">
+      </div>
+
+      <div class="prototipe-images">
+        <h1>Perfil del emprendimiento</h1>
+        <img src="resources/profile-startUp.jpg" alt="Pantalla 2 del prototipo" class="prototipe-img">
+      </div>
+
+      <div class="prototipe-images">
+        <h1>Nuevo Post (Desde el perfil)</h1>
+        <img src="resources/newPost-StartUp.jpg" alt="Pantalla 4 del prototipo" class="prototipe-img">
+      </div>
+
+    </section>
+
+    <!-- De aqui para abajo es la parte de la encuesta-->
+    <section class="content-section">
+
+      <div class="info-point">
+        <h3>Para la investigacion de hechos se realizo una encuesta via Google Forms</h3>
+        <p>En lugar de entrevistas formales en una etapa inicial, se realizará una encuesta vía online (Google Forms)
+          apoyándonos con el prototipo. Se envió la encuesta a emprendedores de la universidad, ajenos a la universidad
+          y a conocidos. <br>
+          Link a la encuesta:
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLScisP7hHOitxpaCykUcaHRsB8lCLWQs6KrVQjOyBv9cTICAMw/viewform?usp=dialog">EmprendiUNET</a>
+          <br><br>
+          A continuacion mostramos los resultados y explicamos brevemente la retroalimentacion de los mas importantes
+        </p>
+      </div>
+
+      <div class="prototipe-images">
+        <img src="resources/whatsapp-recomendation.png" alt="Pantalla 3 del prototipo" class="prototipe-img">
+        <p>La plataforma debe asumir que las ventas se concretarán fuera de EmprendiUNET. Por lo tanto, el sistema se
+          diseñará para
+          ser un portal de visibilidad, haciendo del botón de contacto por WhatsApp una prioridad alta y el principal
+          llamado a la acción
+        </p>
+      </div>
+
+      <div class="prototipe-images">
+        <img src="resources/comment-notification.png" alt="Pantalla 3 del prototipo" class="prototipe-img">
+        <p>Una pregunta es un cliente potencial con un gran interés de
+          compra. El sistema debe incluir un módulo de notificaciones que sea altamente
+          visible y urgente para los comentarios, ya que una respuesta rápida puede traducirse
+          en una venta cerrada.</p>
+      </div>
+
+      <div class="prototipe-images">
+        <img src="resources/videos-recommendation.png" alt="Pantalla 3 del prototipo" class="prototipe-img">
+        <p> EmprendiUNET debe ser diseñado como una plataforma
+          enfocada completamente en imágenes y videos. Este hallazgo justifica la necesidad
+          de una infraestructura robusta que pueda manejar y mostrar múltiples archivos
+          multimedia por publicación de manera fluida.</p>
+      </div>
+
+      <div class="prototipe-images">
+        <img src="resources/many-categories.png" alt="Pantalla 3 del prototipo" class="prototipe-img">
+        <p>Para mejorar la búsqueda y la organización, y aprovechando la
+          flexibilidad que nos ofrece una base de datos moderna (como NoSQL), decidimos
+          que el campo de categorías debe ser adaptable. Cada publicación contará con un
+          atributo que almacena una lista de texto (un string) con múltiples etiquetas, lo que
+          permitirá clasificar y filtrar los productos de manera eficiente, sin la complicación
+          de las tablas relacionales. </p>
+      </div>
+
+      <div class="prototipe-images">
+        <img src="resources/bussiness-state.png" alt="Pantalla 3 del prototipo" class="prototipe-img">
+        <p> Para manejar las expectativas de los clientes y reducir el estrés
+          del vendedor, incluiremos un atributo de Estado del Emprendimiento (por
+          ejemplo: Activo/En Pausa) que será visible en todo momento en la interfaz. Esto se
+          integrará directamente en el modelo de datos.</p>
+      </div>
+
+    </section>
+
+    <br>
+  </main>
+
+  <!-- Pie de pagina y creditos-->
+  <footer>
+    <p>Tecnologias usadas</p>
+    <div class="tech-icons">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png" alt="Express Logo"
+        class="invert-filter">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="Node.js Logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg" alt="MongoDB Logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React Logo">
+    </div>
+    <p>Universidad Nacional Experimental del Táchira - Departamento de Ingeniería en Informática</p>
+    <p>Angel Miguel Vivas Perez</p>
+    <p>© 2025 EmprendiUNET - Todos los derechos reservados</p>
+  </footer>
+
+</body>
+
+</html>
