@@ -252,3 +252,83 @@ footer {
   transform: scale(1.01); /* Agranda ligeramente la imagen */
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
+
+.task-list {
+    list-style: none; /* Elimina la viñeta por defecto */
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+.task-list li {
+    padding: 10px 0;
+    padding-left: 30px; /* Espacio para el nuevo icono de checkmark */
+    border-bottom: 1px dashed #e0e0e0; /* Línea punteada para separar tareas */
+    position: relative;
+    /* Suave transición si quieres añadir un efecto al pasar el mouse */
+    transition: background-color 0.2s; 
+}
+
+.task-list li:last-child {
+    border-bottom: none; /* La última tarea no lleva línea divisoria */
+}
+
+/* El elemento visual (checkmark) que reemplaza la viñeta */
+.task-list li::before {
+    content: '✔️'; /* El icono de verificación (checkmark) */
+    color: #007bff; /* Usando el azul principal de la UNET */
+    font-size: 1.1em;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 50%; /* Centra verticalmente */
+    transform: translateY(-50%);
+    line-height: 1; /* Asegura un buen centrado del icono */
+}
+
+/* Efecto visual sutil al pasar el mouse sobre una tarea */
+.task-list li:hover {
+    background-color: #f9f9f9; /* Un color de fondo muy claro para destacar la tarea */
+}
+
+.progress-container {
+    margin: 30px 0;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.progress-container p {
+    font-weight: 600;
+    color: #133d87; /* Azul oscuro UNET para el texto */
+    margin-bottom: 10px;
+}
+
+.progress-bar-wrapper {
+    width: 100%;
+    background-color: #e9ecef; /* Gris claro de fondo */
+    border-radius: 5px;
+    height: 25px;
+    overflow: hidden; /* Para que la barra interna no se salga */
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #28a745; /* ¡El color verde de éxito! */
+    transition: width 0.6s ease; /* Transición para un efecto suave si el porcentaje cambiara */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Alinea el texto a la derecha de la barra (si tuviera) */
+    /* Puedes añadir una sutil sombra interna para un efecto 3D si deseas: */
+    /* box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); */
+}
+
+.progress-text {
+    display: block;
+    text-align: right;
+    font-weight: 700;
+    color: #28a745; /* El texto en color verde para destacar el 100% */
+    margin-top: 5px;
+    font-size: 1.1em;
+}

@@ -1,23 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<!--Definicion de valores y links externos de donde obtenemos recursos visuales-->
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>En Desarrollo - EmprendiUNET</title>
+  <title>Fases de Desarrollo - EmprendiUNET</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
-<!-- Cuerpo de la pagina HTML para el index -->
-
 <body>
 
-  <!-- Encabezado de pagina -->
   <header>
     <img src="logo_unet.png" alt="UNET Logo" class="logo">
     <div class="header-text">
@@ -26,7 +21,6 @@
     </div>
   </header>
 
-  <!-- Barras que abren el menu de navegacion -->
   <div class="dropdown-nav">
     <button class="dropbtn">&#9776; Menú</button>
     <div class="dropdown-content">
@@ -34,22 +28,146 @@
       <a href="tecnicas.html">Tecnicas de levantamiento</a>
       <a href="development.html">Proceso de desarrollo</a>
       <a href="glosario.html">Glosario de terminos</a>
+      <a href="analysis.html">Fases de desarrollo</a>
     </div>
   </div>
 
-  <!-- Seccion principal de la pagina -->
   <main class="container">
 
-    <section class="content-section" style="text-align: center;">
+    <div class="info-point">
+      <h3 style="text-align: center; font-size: 1.8em; border-left: none;">Plan de Desarrollo: 5 Semanas para
+        EmprendiUNET</h3>
+    </div>
+
+    <section class="content-section">
       <div class="info-point">
-        <h3>¡Página en desarrollo!</h3>
-        <p style="font-size: 2em; margin-top: 20px;">😊</p>
+        <h3>💡 Fase 1 (Semana 1): Conceptualización y Cimientos</h3>
+        <ul class="task-list">
+          <li>Lluvia de ideas y exploración de conceptos.</li>
+          <li>Elección definitiva del proyecto.</li>
+          <li>Presentación formal de la idea "EmprendiUNET".</li>
+          <li>Aprobación del concepto y alcance inicial.</li>
+          <li>Inicio de la fase de diseño de la base de datos.</li>
+          <li>Creación de los modelos iniciales: <strong>Usuario</strong> y <strong>Emprendimiento</strong>.</li>
+        </ul>
+
+        <div class="progress-container">
+          <p>Estado General de la Fase "Conceptualización y Cimientos":</p>
+          <div class="progress-bar-wrapper">
+            <div class="progress-bar" style="width: 100%;"></div>
+          </div>
+          <span class="progress-text">¡Semana Completa! 100% ✅</span>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="content-section">
+      <div class="info-point">
+        <h3>⚙️ Fase 2 (Semana 2): Construcción del Núcleo Funcional</h3>
+        <ul class="task-list">
+          <li>Implementación de acciones primarias: Crear usuario, iniciar sesión y mostrar información.</li>
+          <li>Integración de un asistente para el manejo de imágenes (fotos de perfil).</li>
+          <li>Definición de modelos adicionales: <strong>Post</strong>, <strong>Follow</strong>, y
+            <strong>Likes</strong>.</li>
+          <li>Desarrollo de un frontend de prueba para validar el flujo de la información.</li>
+          <li>Creación de más funcionalidades: Perfil de Usuario, Perfil de Emprendimiento y sistema para seguir/dejar
+            de seguir.</li>
+        </ul>
+      </div>
+
+      <div class="progress-container">
+          <p>Estado General de la Construcción del Núcleo Funcional:</p>
+          <div class="progress-bar-wrapper">
+            <div class="progress-bar" style="width: 100%;"></div>
+          </div>
+          <span class="progress-text">¡Semana Completa! 100% ✅</span>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="content-section">
+      <div class="info-point">
+        <h3>📊 Fase 3 (Semana 3): Refinamiento y Feedback Inicial</h3>
+        <ul class="task-list">
+          <li>Definición correcta de las relaciones y referencias en los modelos de la base de datos.</li>
+          <li>Depuración (Debugging) de errores acumulados hasta el momento.</li>
+          <li>Creación de un prototipo interactivo y lanzamiento de una encuesta para recoger datos de usuarios.</li>
+          <li>Actualización de los perfiles para mostrar dinámicamente los emprendimientos y posts asociados.</li>
+          <li>Implementación completa de los sistemas de <strong>Likes</strong>, <strong>Comentarios</strong> y
+            <strong>Posts</strong>.</li>
+          <li>Verificación de la sesión activa del usuario y persistencia de datos.</li>
+        </ul>
+      </div>
+
+      <div class="progress-container">
+          <p>Estado General del Refinamiento y Feedback Inicial:</p>
+          <div class="progress-bar-wrapper">
+            <div class="progress-bar" style="width: 100%;"></div>
+          </div>
+          <span class="progress-text">¡Semana Completa! 100% ✅</span>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="content-section">
+      <div class="info-point">
+        <h3>🎨 Fase 4 (Semana 4): Expansión y Mejoras de Interfaz</h3>
+        <ul class="task-list">
+          <li>Incorporación de nuevos campos basados en el feedback de la encuesta (WhatsApp, estado del emprendimiento,
+            etc.).</li>
+          <li>Implementación de selectores y opciones fijas para campos como ubicación, carrera y estado del negocio.
+          </li>
+          <li>Mejoras significativas en la interfaz de usuario (UI) y creación de nuevas vistas.</li>
+          <li>Sectorización del código: separación en carpetas y archivos para una mejor organización y mantenibilidad.
+          </li>
+          <li>Creación de la página principal (HomePage) del sistema.</li>
+          <li>Finalización de los sistemas de <strong>Usuario</strong>, <strong>Publicaciones</strong> y
+            <strong>Likes</strong>.</li>
+        </ul>
+
+        <div class="progress-container">
+          <p>Estado General de la Expansión y Mejoras de Interfaz:</p>
+          <div class="progress-bar-wrapper">
+            <div class="progress-bar" style="width: 100%;"></div>
+          </div>
+          <span class="progress-text">¡Semana Completa! 100% ✅</span>
+        </div>
+      </div>
+
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="info-point">
+        <h3>🚀 Fase 5 (Semana 5): Pruebas Finales y Lanzamiento</h3>
+        <ul class="task-list">
+          <li>Realización de tests con usuarios cercanos para recoger feedback final.</li>
+          <li>Desarrollo del sistema de calificación de emprendimientos.</li>
+          <li>Implementación de una funcionalidad de búsqueda por aproximación.</li>
+          <li>Creación de las vistas para mostrar "Siguiendo" (Following) y "Seguidores" (Followers).</li>
+          <li>Agregado de una barra lateral de navegación con enlaces clave.</li>
+          <li>Finalización de los sistemas de <strong>Comentarios</strong> y <strong>Emprendimientos</strong>.</li>
+          <li>Ajustes finales y estilizado general de la página.</li>
+          <li>Mejoras de rendimiento y optimización en el código del backend y frontend.</li>
+        </ul>
+
+        <div class="progress-container">
+          <p>Estado General de las Pruebas Finales y Lanzamiento:</p>
+          <div class="progress-bar-wrapper">
+            <div class="progress-bar" style="width: 100%;"></div>
+          </div>
+          <span class="progress-text">¡Semana Completa! 100% ✅</span>
+        </div>
+      </div>
+
       </div>
     </section>
 
   </main>
 
-  <!-- Pie de pagina y creditos -->
   <footer>
     <p>Tecnologias usadas</p>
     <div class="tech-icons">
@@ -60,7 +178,7 @@
       <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React Logo">
     </div>
     <p>Universidad Nacional Experimental del Táchira - Departamento de Ingeniería en Informática</p>
-    <p>Angel Miguel Vivas Perez</p>
+    <p>En desarrollo por: Angel Miguel Vivas Perez</p>
     <p>© 2025 EmprendiUNET - Todos los derechos reservados</p>
   </footer>
 

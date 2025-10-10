@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proceso de Desarrollo - EmprendiUNET</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <img src="logo_unet.png" alt="UNET Logo" class="logo">
+    <div class="header-text">
+      <h1>EmprendiUNET</h1>
+      <p> Conectando la población emprendedora con la UNET </p>
+    </div>
+  </header>
+
+  <nav class="main-nav">
+    <ul>
+      <li><a href="#analisis">Fase 1</a></li>
+      <li><a href="#viabilidad">Viabilidad del proyecto</a></li>
+      <li><a href="#as-is">Análisis del Sistema Actual</a></li>
+      <li><a href="#to-be">Requisitos del sistema</a></li>
+      <li><a href="#diseno">Fase 2</a></li>
+      <li><a href="#arquitectura">Arquitectura del sistema</a></li>
+    </ul>
+  </nav>
+
+  <div class="dropdown-nav">
+    <button class="dropbtn">&#9776; Menú</button>
+    <div class="dropdown-content">
+      <a href="index.html">Inicio</a>
+      <a href="tecnicas.html">Tecnicas de levantamiento</a>
+      <a href="development.html">Proceso de desarrollo</a>
+      <a href="glosario.html">Glosario de terminos</a>
+      <a href="analysis.html">Fases de desarrollo</a>
+    </div>
+  </div>
+
+  <main class="container">
+
+    <section class="content-section">
+      <div class="info-point" id="analisis">
+        <h3>Parte 1: Fases del Análisis de Sistemas Aplicadas al Proyecto</h3>
+        <p>Esta es la etapa de descubrimiento y definición del problema y de las necesidades del nuevo sistema. Aquí se demostró cómo cada fase, desde el descubrimiento del problema hasta la selección de una arquitectura, fue ejecutada para asegurar que EmprendiUNET no solo fuera una aplicación funcional, sino un Sistema de Información alineado con las necesidades reales de la comunidad universitaria.</p>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="info-point" id="viabilidad">
+        <h3>Estudio de Viabilidad del Proyecto</h3>
+        <p>Tras un análisis preliminar, se concluyó que el proyecto EmprendiUNET es factible desde las perspectivas técnica, económica y operativa.</p>
+        <ul>
+            <li><p><strong>Viabilidad Técnica:</strong> El proyecto es viable. La arquitectura propuesta se basa en tecnologías modernas y de código abierto (React, Node.js, MongoDB), que cuentan con amplia documentación y soporte comunitario, facilitando el desarrollo para un único programador sin requerir hardware especializado.</p></li>
+            <li><p><strong>Viabilidad Económica:</strong> El proyecto es económicamente viable. Al ser un proyecto académico, el principal recurso invertido es el tiempo. Los costos monetarios son mínimos y los beneficios (mayor visibilidad para emprendedores, fomento de la economía interna y una cultura de innovación) justifican la inversión.</p></li>
+            <li><p><strong>Viabilidad Operativa:</strong> El proyecto es operativamente viable. La metodología de Prototipado Evolutivo y la retroalimentación directa de la comunidad aseguraron que el sistema se ajustara a los flujos de trabajo existentes de los usuarios (como el uso de WhatsApp), garantizando su aceptación.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="info-point" id="as-is">
+        <h3>Análisis del Sistema Actual ("AS IS")</h3>
+        <p>Se investigaron los procesos informales que la comunidad UNET utiliza actualmente. Mediante un cuestionario online, se determinó que el sistema "AS IS" es un ecosistema no estructurado y fragmentado.</p>
+        <p><strong>Resultados Clave:</strong></p>
+        <ul>
+            <li><p><strong>Canales de Difusión:</strong> Un 75% de los emprendedores depende de canales informales como estados de WhatsApp e Instagram, con una efectividad promedio calificada de 2 sobre 5.</p></li>
+            <li><p><strong>Proceso de Venta:</strong> El 90% de todas las interacciones de venta se concretan a través de WhatsApp.</p></li>
+            <li><p><strong>Experiencia del Comprador:</strong> Un 85% de los compradores manifestó que encontrar un emprendimiento específico es "difícil" o "muy difícil".</p></li>
+        </ul>
+         <p><strong>Deficiencias Identificadas:</strong> Invisibilidad y alcance limitado, proceso de búsqueda ineficiente, falta de confianza y formalidad, e información descentralizada.</p>
+      </div>
+    </section>
+
+    <section class="content-section">
+        <div class="info-point" id="to-be">
+          <h3>Requisitos del Sistema ("TO BE")</h3>
+          <p>Para resolver los problemas identificados, se definieron los siguientes requisitos clave para la primera versión de la plataforma:</p>
+          <p><strong>Requisitos Funcionales (Prioridad Alta):</strong></p>
+          <ul>
+            <li><p><strong>RF-01:</strong> Gestión de Cuentas de Usuario (Registro, login, perfil).</p></li>
+            <li><p><strong>RF-02:</strong> Gestión de Emprendimientos (Crear y administrar perfil del negocio).</p></li>
+            <li><p><strong>RF-03:</strong> Contacto Directo por WhatsApp (Botón prominente en cada perfil).</p></li>
+            <li><p><strong>RF-04:</strong> Gestión de Publicaciones (Crear, editar y eliminar posts con imágenes).</p></li>
+          </ul>
+          <p><strong>Requisitos No Funcionales:</strong></p>
+          <ul>
+            <li><p><strong>RNF-01 (Usabilidad):</strong> Interfaz intuitiva, clara y atractiva.</p></li>
+            <li><p><strong>RNF-02 (Rendimiento):</strong> Carga rápida, especialmente de contenido multimedia.</p></li>
+            <li><p><strong>RNF-03 (Escalabilidad):</strong> La arquitectura debe permitir crecimiento futuro.</p></li>
+            <li><p><strong>RNF-04 (Seguridad):</strong> Protección de datos personales y acceso restringido a la base de datos.</p></li>
+          </ul>
+        </div>
+      </section>
+
+    <section class="content-section">
+      <div class="info-point" id="diseno">
+        <h3>Parte 2: Fases del Diseño de Sistemas Aplicadas al Proyecto</h3>
+        <p>Esta es la etapa de planificación detallada y estructuración de la solución. El proceso de diseño transforma los requisitos (el "qué") en la estructura lógica y técnica de la solución (el "cómo").</p>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="info-point" id="arquitectura">
+        <h3>Arquitectura del Sistema</h3>
+        <p>Se evaluaron dos alternativas: una arquitectura monolítica y una arquitectura de 3 capas (cliente-servidor). Se seleccionó la <strong>Arquitectura de 3 Capas</strong> por sus ventajas en organización, mantenimiento, escalabilidad y seguridad.</p>
+        <p><strong>Justificación de la Selección:</strong></p>
+        <ul>
+            <li><p><strong>Organización y Claridad:</strong> Impone una separación clara de responsabilidades:
+                <br>- <strong>Capa de Presentación (Frontend):</strong> React.
+                <br>- <strong>Capa de Lógica (Backend):</strong> Node.js y Express.js.
+                <br>- <strong>Capa de Datos (Base de datos):</strong> MongoDB.</p>
+            </li>
+            <li><p><strong>Mantenimiento y Escalabilidad:</strong> La independencia de las capas facilita mantener y hacer crecer el sistema. Por ejemplo, se podría crear una aplicación móvil que consuma la misma capa de lógica existente.</p>
+            </li>
+            <li><p><strong>Seguridad:</strong> Es un modelo inherentemente más seguro, ya que los usuarios finales nunca acceden directamente a la base de datos. La capa de lógica actúa como un intermediario y guardián.</p>
+            </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Tecnologias usadas</p>
+    <div class="tech-icons">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png" alt="Express Logo" class="invert-filter">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="Node.js Logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg" alt="MongoDB Logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React Logo">
+    </div>
+    <p>Universidad Nacional Experimental del Táchira - Departamento de Ingeniería en Informática</p>
+    <p>En desarrollo por: Angel Miguel Vivas Perez</p>
+    <p>© 2025 EmprendiUNET - Todos los derechos reservados</p>
+  </footer>
+
+</body>
+
+</html>
